@@ -7,11 +7,11 @@ from twocaptcha import TwoCaptcha
 import time
 import requests
 import threading
-solver = TwoCaptcha('bd0da1cddac45399e46b16c70535399f')
+solver = TwoCaptcha('')
 fields = ['file_name','url','date']
 config = {
             'server':           '2captcha.com',
-            'apiKey':           'bd0da1cddac45399e46b16c70535399f',
+            'apiKey':           '',
             'softId':            123,
             'callback':         'https://your.site/result-receiver',
             'defaultTimeout':    120,
@@ -26,14 +26,14 @@ def instance_one():
         page = browser.new_page()
         page_no = 0
         rows = []
-        url = "https://www.cpwshop.com/"
+        url = "removed for secturity reason "
         page.goto(url, timeout=706775)
         print(("Navigatin to.. " + url))
         # USER INPUTS
         #################
-        token_key = 'bd0da1cddac45399e46b16c70535399f'
-        CID = '228289286'
-        PASSWORD = 'Cpwshoptest1'
+        token_key = ''
+        CID = ''
+        PASSWORD = ''
         #ANIMAL = 'Deer'
         ANIMAL_NUMBER = 1
         CODE = 'DE034P2R'
